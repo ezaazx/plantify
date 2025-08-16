@@ -1,0 +1,147 @@
+.expert-section {
+  padding: 2rem;
+  padding-top: 100px;
+}
+
+.section-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #064e3b;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.section-subtitle {
+  color: #4b5563;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.cards-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 768px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.expert-card {
+  background-color: #D9F2DE;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #10b981;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.expert-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.expert-type {
+  display: inline-block;
+  background-color: #d1fae5;
+  color: #065f46;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  margin-top: 0.25rem;
+}
+
+.expert-rating {
+  color: #facc15;
+  font-weight: bold;
+}
+
+.expert-specialty {
+  color: #374151;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.expert-info {
+  color: #4b5563;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.expert-contacts {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.expert-contacts span {
+  font-weight: 500;
+}
+
+.expert-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+  gap: 0.75rem;
+}
+
+.call-btn, .message-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.call-btn {
+  background-color: #059669;
+  color: white;
+}
+
+.call-btn:hover {
+  background-color: #047857;
+}
+
+.message-btn {
+  background-color: #22c55e;
+  color: white;
+}
+
+.message-btn:hover {
+  background-color: #16a34a;
+}
+
+.expert-photo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.expert-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #4CAF50;
+}
